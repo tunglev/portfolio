@@ -156,7 +156,7 @@ const filterFunc = function (selectedValue) {
 	}
 }
 // initial page
-filterFunc("games");
+filterFunc("mixed reality");
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0]
 
