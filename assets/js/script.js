@@ -134,7 +134,7 @@ select.addEventListener('click', function () {
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
 	selectItems[i].addEventListener('click', function () {
-		let selectedValue = this.innerText.toLowerCase()
+		let selectedValue = this.innerText
 		selectValue.innerText = this.innerText
 		elementToggleFunc(select)
 		filterFunc(selectedValue)
@@ -148,7 +148,7 @@ const filterFunc = function (selectedValue) {
 	for (let i = 0; i < filterItems.length; i++) {
 		if (selectedValue === 'all') {
 			filterItems[i].classList.add('active')
-		} else if (filterItems[i].dataset.category.includes(selectedValue)) {
+		} else if (filterItems[i].dataset.category.toLowerCase().includes(selectedValue.toLowerCase())) {
 			filterItems[i].classList.add('active');
 		} else {
 			filterItems[i].classList.remove('active');
@@ -156,7 +156,7 @@ const filterFunc = function (selectedValue) {
 	}
 }
 // initial page
-filterFunc("mixed reality");
+filterFunc('All ⭐');
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0]
 
