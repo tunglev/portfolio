@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Data Sonification Research</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <browser-size-warning></browser-size-warning>
+
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #ABOUT
+      -->
+
+            <article class="about  active" data-page="about">
+                <back-btn></back-btn>
+                <header>
+                    <h2 class="h2 article-title">What audio encoding of spatial information (for a whole room/scenario) best enables someone to be spatially aware of their
+                    surroundings?</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>Spring 2024 - Now</p>
+                    <p>Active Contributors: 
+                        <a href="https://people.cs.umass.edu/~pthomas/" target="_blank" style="text-decoration: underline;">Professor Philip S. Thomas</a>
+                        <a href="https://www.cics.umass.edu/about/directory/ravi-karkar" target="_blank" style="text-decoration: underline;">Professor Ravi Karkar</a>
+                        <a href="https://www.cics.umass.edu/about/directory/vp-nguyen" target="_blank"  style="text-decoration: underline;">Professor VP Nguyen</a>
+                        <a href="https://tunglev.github.io" target="_blank"  style="text-decoration: underline;">Tung Le</a>
+                        <a href="https://www.linkedin.com/in/paul-c-davis" target="_blank"  style="text-decoration: underline;">Paul Davis</a>
+                        <a href="https://ryanboldi.github.io/" target="_blank"  style="text-decoration: underline;">Ryan Boldi</a>
+
+                    </p>
+                    </p>
+                    <p>Tung Le: Sole developer for the VR research application.</p>
+                    <p>Codebase contribution: Write 2600+ lines of C# code across 32 files</p>
+
+                    <empty-line></empty-line>
+                    <empty-line></empty-line>
+
+                    <h2>Research Objective</h2>
+                    <p>This study investigates the optimal audio encoding methods for spatial information to enhance environmental awareness
+                        through sound. The research specifically focuses on developing and evaluating different approaches to convey
+                        room-scale spatial information through audio cues, enabling users to understand their surroundings without visual
+                        input.</p>
+                    
+                    <h2>Experimental Setup</h2>
+                    <p>The study utilizes wired headphones in a controlled indoor environment to ensure consistent motion controller
+                        tracking and audio quality. The testing environment consists of randomly selected preset rooms within a 12x12 foot
+                        boundary, incorporating a safety guard offset of 1-2 feet. This setup enables controlled testing while maintaining
+                        ecological validity.</p>
+                    
+                    <h2>Methodology</h2>
+                    <p>The research employs a comprehensive testing protocol divided into pre-test qualification and main test phases. The
+                        pre-test phase evaluates subjects' basic spatial audio perception abilities through various tasks, including
+                        pointing to static and moving audio sources in both 2D and 3D space. The main test phase involves three distinct
+                        scenarios: Stationary, Line, and Studio, where subjects navigate virtual environments and interact with objects
+                        using different audio encoding methods.</p>
+                    
+                    <h2>Audio Encoding Methods</h2>
+                    <p>Two primary encoding approaches were developed, each with three distinct variations:
+                        1) Growing Sphere Method: Features time-based distance indication with three variations: basic timing,
+                        pitch-distance mapping, and pitch-elevation mapping.
+                        2) Environmental Sound Method: Implements three different approaches to wall and object sonification: sequential
+                        sound emission, constant sound emission, and on-demand sound emission (echolocation-style).</p>
+
+                    <div style="display: flex; height: fit-content; gap: 20px; justify-content: center;">
+                        <video width="50%" controls>
+                            <source
+                                src="assets/images/Spatial Sonification/MetaQuest Experimentation - MRUKBase - Android - Unity 2022.3.11f1 _DX11_ 2024-05-27 12-48-38.mp4"
+                                type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video width="50%" controls>
+                            <source src="assets/images/Spatial Sonification/roomdemo.mp4" type="video/mp4">
+                            <source src="movie.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <h2>Spatial-Audio Mapping</h2>
+                    <p>The study explores various mappings between spatial properties (distance, elevation) and sound properties (pitch,
+                        delay, amplitude). Multiple mapping configurations are investigated, including direct one-to-one relationships and
+                        more complex transformations. For example, specific implementations include mapping elevation to frequency (6000Hz
+                        for high elevation with +10dB amplitude, adjusted accordingly for lower elevations) and various distance-to-sound
+                        parameter relationships.</p>
+                    
+                    <h2>Key Findings</h2>
+                    <p>Preliminary results demonstrate that in stationary testing conditions, subjects exhibited approximately twice the
+                        accuracy in horizontal position determination compared to vertical position identification when utilizing Meta's
+                        native HRTFs. This indicates a significant disparity in spatial audio perception between horizontal and vertical
+                        planes.</p>
+
+                    <div style="display: flex; height: fit-content; gap: 20px; justify-content: center;">
+                        <img class="project-img" src="assets/images/Spatial Sonification/graph.png" />
+                        <img class="project-img" src="assets/images/Spatial Sonification/graph2.png" />
+
+                    </div>
+                    
+                    <h2>Impact and Applications</h2>
+                    <p>This ongoing research holds substantial potential for assistive technology, enabling enhanced independent spatial
+                        navigation for visually impaired individuals through intuitive auditory feedback, as well as safety applications
+                        providing supplementary spatial awareness systems with 360-degree environmental perception. The research continues
+                        to progress, with implications for both assistive technology development and broader applications in spatial
+                        awareness enhancement.</p>
+                </section>
+                
+
+                
+
+
+                <section class="about-text">
+                    <p>Shadow cast on transparent plane (ground illusion) & first Earth render</p>
+                </section>
+
+                <section class="about-text">
+                    <h1>What's the future?</h1>
+                    <p>Finding a way to solve real world problem outside gaming using AR. Experimenting more with
+                        Hand/Face Tracking & Dynamic Lighting feature of Unity. More excitedly, looking towards to
+                        intergrating<a href="https://developers.google.com/ar/geospatialcreator"
+                            style="text-decoration: underline;">Photorealistic 3D Tiles and Google Geospatial. 🡥</a>
+                    </p>
+                    <p>I'll try to keep thing updated frequently via my portfolio.</p>
+                </section>
+
+
+                <back-btn></back-btn>
+            </article>
+    </main>
+
+
+
+
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
