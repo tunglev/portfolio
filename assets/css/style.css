@@ -1682,7 +1682,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: center;
     width: fit-content;
-    gap: 25px;
+    gap: 45px;
+    font-weight: bold;
     padding: 20px;
     position: sticky;
     top: 0px;
@@ -1695,13 +1696,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button {
     color: var(--light-gray);
-    font-size: var(--fs-5);
+    font-size: var(--fs-4);
     transition: var(--transition-1);
   }
 
-  .filter-item button:hover { color: var(--light-gray-70); }
+  .filter-item button:hover { color: rgb(0, 255, 204); transition: 500ms; 
+    padding: 0px 10px;
+  }
 
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
+  .filter-item button.active { 
+    color: whitesmoke;  
+    transition: 0.5s;
+    border: 1px white solid; 
+    padding: 10px;
+    border-radius: 3px; }
 
   /* portfolio and blog grid */
 
