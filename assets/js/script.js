@@ -160,7 +160,7 @@ const filterFunc = function (selectedValue) {
 	}
 }
 // initial page
-filterFunc('Highlights ⭐');
+filterFunc('Highlights⭐');
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0]
 
