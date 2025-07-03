@@ -1,4 +1,16 @@
 $(document).ready(function () {
+	var elements = document.getElementsByClassName('typewrite');
+	for (var i = 0; i < elements.length; i++) {
+		var toRotate = elements[i].getAttribute('data-type');
+		var period = elements[i].getAttribute('data-period');
+		if (toRotate) {
+			new TxtType(elements[i], JSON.parse(toRotate), period);
+		}
+	}
+	// INJECT CSS
+	var css = document.createElement('style');
+	css.type = 'text/css';
+	document.body.appendChild(css);
 	// Images loaded is zero because we're going to process a new set of images.
 	var imagesLoaded = 0
 	// Total images is still the total number of <img> elements on the page.
@@ -72,20 +84,5 @@ TxtType.prototype.tick = function () {
 	setTimeout(function () {
 		that.tick();
 	}, delta);
-};
-
-window.onload = function () {
-	var elements = document.getElementsByClassName('typewrite');
-	for (var i = 0; i < elements.length; i++) {
-		var toRotate = elements[i].getAttribute('data-type');
-		var period = elements[i].getAttribute('data-period');
-		if (toRotate) {
-			new TxtType(elements[i], JSON.parse(toRotate), period);
-		}
-	}
-	// INJECT CSS
-	var css = document.createElement('style');
-	css.type = 'text/css';
-	document.body.appendChild(css);
 };
 // END TYPEWRITER TEXT REGION 
