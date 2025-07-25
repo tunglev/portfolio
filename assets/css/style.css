@@ -1695,7 +1695,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .filter-item button {
-    color: var(--light-gray);
+    color: rgb(84, 84, 84);
     font-size: var(--fs-4);
     transition: var(--transition-1);
   }
@@ -1707,9 +1707,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .filter-item button.active { 
     color: whitesmoke;  
     transition: 0.5s;
-    border: 1px white solid; 
+    border: #212121 1px solid;
+    box-shadow: 3px 10px 8px rgba(0, 0, 0, 0.6);
     padding: 10px;
-    border-radius: 3px; }
+    border-radius: 10px; }
 
   /* portfolio and blog grid */
 
