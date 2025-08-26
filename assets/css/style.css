@@ -1047,10 +1047,13 @@ main {
   height: 100%;
   background: transparent;
   z-index: 1;
-  transition: var(--transition-1);
+  transition: 1000ms ease-in-out;
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > a:hover .project-img::before { 
+  backdrop-filter: grayscale(1) contrast(1.1) saturate(8);
+  transition: 500ms ease-in-out;
+}
 
 .project-item-icon-box {
   --scale: 0.8;
