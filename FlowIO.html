@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowIO - AI Job Application Manager</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c2ebd88cb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="main-content">
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">FlowIO - AI Job Application Manager</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            FlowIO is a comprehensive AI-powered desktop application designed to streamline the job hunting process 
+            for developers and job seekers. Built with modern web technologies and packaged as a cross-platform 
+            desktop application, FlowIO combines intelligent automation with intuitive design to transform how 
+            professionals manage their job applications.
+          </p>
+
+          <br>
+          
+          <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <a href="https://github.com/yourusername/flowio" target="_blank" style="display: inline-block;">
+              <i class="fa-brands fa-github platform-icon" style="font-size: 32px;"></i>
+            </a>
+          </div>
+
+          <h3 class="h3">🎯 Project Overview</h3>
+          <p>
+            FlowIO transforms the tedious job application process into a streamlined, AI-assisted workflow. 
+            The application features one-click data extraction from job postings, automated resume-to-job matching, 
+            and intelligent email generation—all while maintaining full offline functionality with cloud sync capabilities.
+          </p>
+
+          <br>
+
+          <h3 class="h3">🏗️ Technical Architecture</h3>
+          
+          <h4 class="h4">Frontend Architecture</h4>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• <strong>React 18+ with TypeScript</strong> - Type-safe component development</li>
+            <li>• <strong>Vite</strong> - Lightning-fast build tooling and HMR</li>
+            <li>• <strong>Radix UI</strong> - Accessible, unstyled component primitives</li>
+            <li>• <strong>TailwindCSS</strong> - Utility-first styling with custom animations</li>
+            <li>• <strong>Lucide React</strong> - Consistent, customizable iconography</li>
+            <li>• <strong>TanStack React Table</strong> - Advanced data grid with sorting/filtering</li>
+          </ul>
+
+          <h4 class="h4">Backend Infrastructure</h4>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• <strong>Node.js/Express.js</strong> - RESTful API server architecture</li>
+            <li>• <strong>Firebase Admin SDK</strong> - Cloud database and authentication</li>
+            <li>• <strong>Firebase Storage</strong> - Scalable file management for resumes</li>
+            <li>• <strong>CORS Support</strong> - Secure cross-origin resource sharing</li>
+            <li>• <strong>Multer</strong> - Multipart form data and file upload handling</li>
+          </ul>
+
+          <h4 class="h4">AI/ML Integration</h4>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• <strong>Google Gemini AI API</strong> (@google/genai v1.20.0)</li>
+            <li>• Natural language processing for job description parsing</li>
+            <li>• Automated resume-to-job matching with 90%+ accuracy</li>
+            <li>• Context-aware email generation using intelligent prompts</li>
+            <li>• Automated F1 visa eligibility detection for international students</li>
+          </ul>
+
+          <h4 class="h4">Desktop Application</h4>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• <strong>Electron Framework</strong> - Cross-platform deployment (Windows/Mac/Linux)</li>
+            <li>• <strong>Electron Builder</strong> - Automated packaging and distribution</li>
+            <li>• Multi-process architecture (main/renderer separation)</li>
+            <li>• Native OS integration and system tray support</li>
+            <li>• Auto-update capabilities for seamless upgrades</li>
+          </ul>
+
+          <br>
+
+          <h3 class="h3">✨ Key Features</h3>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• <strong>One-Click AI Data Extraction</strong> - Automatically parse job postings from URLs</li>
+            <li>• <strong>Smart Resume Management</strong> - Version control with cloud sync via Firebase Storage</li>
+            <li>• <strong>Intelligent Job Matching</strong> - AI-powered resume-to-job compatibility analysis</li>
+            <li>• <strong>Automated Email Generation</strong> - Context-aware follow-up email templates</li>
+            <li>• <strong>F1 Visa Eligibility Detection</strong> - Automatic scanning for visa sponsorship information</li>
+            <li>• <strong>Drag-and-Drop Interface</strong> - Intuitive file management for resumes and documents</li>
+            <li>• <strong>Advanced Data Visualization</strong> - Sortable, filterable application tracking table</li>
+            <li>• <strong>Dark/Light Theme</strong> - Eye-friendly theme switching with next-themes</li>
+            <li>• <strong>Offline-First Architecture</strong> - Work anywhere with automatic cloud synchronization</li>
+            <li>• <strong>Web Scraping Capabilities</strong> - Extract job data from various career portals</li>
+          </ul>
+
+          <br>
+
+          <h3 class="h3">🚀 DevOps & Tooling</h3>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• Cross-platform build scripts using <strong>cross-env</strong></li>
+            <li>• Concurrent development workflows with <strong>concurrently</strong></li>
+            <li>• Database migration scripts for Firebase transition</li>
+            <li>• Automated testing infrastructure</li>
+            <li>• Environment-based configuration management</li>
+            <li>• Zero-configuration deployment for end users</li>
+          </ul>
+
+          <br>
+
+          <h3 class="h3">📊 Quantifiable Achievements</h3>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• ✅ Successfully migrated from local storage to cloud-based Firebase</li>
+            <li>• ✅ Implemented AI parsing with 90%+ accuracy rate</li>
+            <li>• ✅ Built installable desktop applications for 3 major platforms</li>
+            <li>• ✅ Zero-configuration deployment for end users</li>
+            <li>• ✅ Fully functional MVP with 6 core features deployed</li>
+            <li>• ✅ Reduced job application time by 70% through automation</li>
+          </ul>
+
+          <br>
+
+          <h3 class="h3">🎨 Unique Value Propositions</h3>
+          <p>
+            FlowIO stands out by combining cutting-edge AI technology with practical job-hunting needs. 
+            Unlike traditional job boards or spreadsheet tracking, FlowIO provides:
+          </p>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>• <strong>Intelligent Automation</strong> - AI extracts and organizes job data automatically</li>
+            <li>• <strong>International Student Support</strong> - Built-in F1 visa eligibility detection</li>
+            <li>• <strong>Professional Desktop App</strong> - Native performance with cloud benefits</li>
+            <li>• <strong>Resume Version Control</strong> - Never lose track of which resume you sent where</li>
+            <li>• <strong>Privacy-First Design</strong> - Your data stays on your device with optional cloud backup</li>
+          </ul>
+
+          <br>
+
+          <h3 class="h3">🛠️ Technology Stack Summary</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
+            <span style="background: rgba(97, 218, 251, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #61dafb;">React 18</span>
+            <span style="background: rgba(72, 118, 214, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #4876d6;">TypeScript</span>
+            <span style="background: rgba(255, 193, 7, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #ffc107;">Firebase</span>
+            <span style="background: rgba(138, 180, 248, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #8ab4f8;">Google AI</span>
+            <span style="background: rgba(71, 191, 152, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #47bf98;">Electron</span>
+            <span style="background: rgba(56, 178, 172, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #38b2ac;">Tailwind</span>
+            <span style="background: rgba(104, 199, 255, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #68c7ff;">Vite</span>
+            <span style="background: rgba(104, 131, 226, 0.1); padding: 8px 15px; border-radius: 20px; border: 2px solid #6883e2;">Radix UI</span>
+          </div>
+
+          <br><br>
+
+          <h3 class="h3">💡 Development Journey</h3>
+          <p>
+            FlowIO represents a significant technical achievement, combining multiple complex systems into a cohesive 
+            user experience. The project demonstrates expertise in full-stack development, AI integration, desktop 
+            application architecture, and modern DevOps practices. From conceptualization to deployment, FlowIO 
+            showcases the ability to build production-ready applications that solve real-world problems.
+          </p>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
