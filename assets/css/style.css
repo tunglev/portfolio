@@ -160,7 +160,14 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { 
+  background: var(--smoky-black);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 2px, transparent 2px);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 0;
+}
 
 
 
