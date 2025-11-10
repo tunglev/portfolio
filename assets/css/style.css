@@ -1860,7 +1860,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-weight: bold;
     padding: 20px;
     position: sticky;
-    top: 60px;
+    top: 2px;
     margin-right: auto;
     margin-bottom: 50px;
     z-index: 100;
@@ -2109,7 +2109,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 25%;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
