@@ -36,39 +36,55 @@
         <back-btn></back-btn>
 
         <header>
-          <h2 class="h2 article-title">Airspace Forensics</h2> 
+          <h2 class="h2 article-title">LiDAR Point Cloud Analysis for Drone Monitoring</h2> 
         </header>
 
         <section class="about-text">
+            <p>
+            - Built a frontend visualization tool using Open3D, Python to render 3D point cloud with intesity and classification
+            </p>
           <p>
-            Airspace Forensics project videos showcasing various features and demonstrations.
+            - Built a background map to isolate moving and non-moving in complex point cloud
           </p>
+          <p>
+            - Developed a system to analyze and visualize drone swarm behavior using LiDAR data, enabling real-time monitoring and threat assessment
+        </p>
+        <p>
+            - Used DBSCAN to cluster point cloud data and identify individual drones, then applied Kalman filter to track their trajectories and predict future positions
+        </p>
+        <p>
+            - Use PointNet to classify drone types based on their 3D shapes generated from the point cloud data + IR camera signatures
+        </p>
 
           <br>
 
           <h3 class="h3">Demonstration Videos</h3>
           <br>
+          <video controls width="100%" class="project-img">
+              <source src="assets/images/AirspaceForensics/Screen Recording 2026-03-28 161109.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
           <div style="display: flex; flex-direction: column; gap: 20px;">
             <video controls width="100%" class="project-img">
               <source src="assets/images/AirspaceForensics/Screen Recording 2026-03-26 174138.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
 
-            <video controls width="100%" class="project-img">
-              <source src="assets/images/AirspaceForensics/Screen Recording 2026-03-26 202731.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
 
             <video controls width="100%" class="project-img">
               <source src="assets/images/AirspaceForensics/Screen Recording 2026-03-28 153711.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-
-            <video controls width="100%" class="project-img">
-              <source src="assets/images/AirspaceForensics/Screen Recording 2026-03-28 161109.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
           </div>
+
+          <br><br>
+          <h3 class="h3">Official Website</h3>
+          <br>
+          <a href="https://www.airspaceforensics.com" target="_blank">
+            <img src="./assets/images/project-airspace-forensics.png" alt="Airspace Forensics Website" style="width: 100%; border-radius: 15px;" class="project-img">
+            <p style="text-align: center; margin-top: 15px; font-weight: 500; text-decoration: underline;">Visit www.airspaceforensics.com 🡥</p>
+          </a>
         </section>
 
       </article>
