@@ -952,7 +952,7 @@ main {
 
 .timeline-item { position: relative; }
 
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
+.timeline-item:not(:last-child) { margin-bottom: 45px; }
 
 .timeline-item-title {
   font-size: var(--fs-6);
@@ -972,7 +972,7 @@ main {
   top: -25px;
   left: -30px;
   width: 1px;
-  height: calc(100% + 50px);
+  height: calc(100% + 75px);
   background: var(--jet);
 }
 
