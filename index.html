@@ -1130,6 +1130,32 @@
 
 
 
+    <!--
+    - #NOTICE: Outdated portfolio notice (pop up on entry)
+  -->
+  <div id="notice_modal" class="notice-modal-container" aria-hidden="true">
+    <div class="notice-overlay"></div>
+    <section class="notice-modal" role="dialog" aria-modal="true" aria-labelledby="notice_title">
+      <button class="notice-close-btn" data-notice-close aria-label="Close notice">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <h2 class="notice-title" id="notice_title">Portfolio notice</h2>
+      <p class="notice-text">This site is no longer the most up-to-date portfolio.</p>
+      <p class="notice-text">The most up-to-date version lives at
+        <a href="https://tunglev.github.io/" target="_blank" rel="noopener noreferrer">https://tunglev.github.io/</a>
+      </p>
+      <div class="notice-actions">
+        <a href="https://tunglev.github.io/" target="_blank" rel="noopener noreferrer"
+          class="notice-btn notice-btn-primary glow-on-hover">
+          Go to new site <i class="fa-solid fa-arrow-up-right-from-comma"></i>
+        </a>
+        <button class="notice-btn notice-btn-secondary glow-on-hover" data-notice-close>
+          Continue here
+        </button>
+      </div>
+    </section>
+  </div>
+
   <div id="loading_image" style="position: fixed;top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.873); color: white; z-index: 99 !important; justify-content: center; display: flex; align-items: center; gap: 5vh;">
     <p>Loading assets for the best experience. Just a second...</p>
     <a 

@@ -218,8 +218,64 @@ for (let i = 0; i < navigationLinks.length; i++) {
 			}
 		}
 
-		window.scrollTo(0, 0);
+				window.scrollTo(0, 0);
 	})
 }
+
+// -----------------------------------------------
+// #outdated-notice popup
+// -----------------------------------------------
+const noticeModal = document.querySelector('#notice_modal')
+const noticeCloseBtns = document.querySelectorAll('[data-notice-close]')
+const noticeOverlay = document.querySelector('.notice-overlay')
+
+const closePortfolioNotice = function () {
+	if (!noticeModal) return
+	noticeModal.classList.remove('active')
+	noticeModal.setAttribute('aria-hidden', 'true')
+	// remember dismissal for this browsing session so the notice
+	// is not shown again on reloads / internal navigation
+	sessionStorage.setItem('noticeDismissed', 'true')
+}
+
+const showPortfolioNotice = function () {
+	if (!noticeModal) return
+
+	// only show once per session (user chose to stay on this site)
+	if (sessionStorage.getItem('noticeDismissed') === 'true') return
+	// respect reduced motion preference
+	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+		noticeModal.classList.add('active')
+		noticeModal.setAttribute('aria-hidden', 'false')
+		return
+	}
+
+	noticeModal.setAttribute('aria-hidden', 'false')
+	// reveal after the current stacking context (loading overlay) resolves
+	requestAnimationFrame(() => {
+		noticeModal.classList.add('active')
+	})
+}
+
+// bind close actions (close button + "Continue here" button via [data-notice-close])
+for (let i = 0; i < noticeCloseBtns.length; i++) {
+	noticeCloseBtns[i].addEventListener('click', closePortfolioNotice)
+}
+
+// clicking the dark overlay also dismisses the notice (matches existing modal behaviour)
+if (noticeOverlay) {
+	noticeOverlay.addEventListener('click', closePortfolioNotice)
+}
+
+// Escape key to dismiss
+document.addEventListener('keydown', function (e) {
+	if (e.key === 'Escape' && noticeModal && noticeModal.classList.contains('active')) {
+		closePortfolioNotice()
+	}
+})
+
+// show the notice once everything has loaded (after #loading_image is hidden)
+window.addEventListener('load', showPortfolioNotice)
+
 
 
